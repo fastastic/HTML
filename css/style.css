@@ -1,3 +1,34 @@
 /* p { font-size: 20px } */
 
 #texto1 { font-size: 20px }
+
+.texto30px { font-size: 30px }
+
+p.textocentrado { text-align: center; }
+
+/* Afecta todo elemento que sea tercer hijo de otro elemento
+p:nth-child(3) { 
+	background: #999999
+}
+*/
+
+/* Afecta a todo elemento que sea primer hijo de la clase mitexto2 de otro elemento
+.mitexto2:nth-child(2) {
+	background: #999999
+}
+*/
+
+/* Afecta a todos los elementos */
+* {
+	margin:40px;
+}
+
+/* Afecta a todo hijo par */
+p:nth-child(odd) {
+	background: #999999
+}
+
+/* Afecta a todo hijo impar */
+p:nth-child(even) {
+	background: #CCCCCC
+}
