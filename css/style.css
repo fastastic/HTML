@@ -32,3 +32,16 @@ p:nth-child(odd) {
 p:nth-child(even) {
 	background: #CCCCCC
 }
+
+/* Si queremos crear una div vacía solo rellena con un color tenemos que darle un width y un height porque sino solo ocupara lo que ocupe el texto que haya dentro */
+.fondo{
+	width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    background-color: #CCCCCC;
+}
+
+/* Importante: Esto afecta a los elementos p de la clase mitexto 2 que esten DENTRO del div con id=wrapper */
+#wrapper > p.mitexto2 {
+	color: #990000;
+}
