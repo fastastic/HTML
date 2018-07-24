@@ -45,3 +45,24 @@ body {
 	padding: 5px;
 	font: bold 14px verdana, sans-serif;
 }
+
+#seccion {
+	float: left;
+	width: 660px;
+	margin: 20px;
+}
+
+#columna {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 20px;
+	background: #CCCCCC;
+}
+
+#pie {
+	clear: both; /* Restaura las condiciones normales del área ocupada por el elemento, es decir, en vez de que se ponga en la segunda columna, se pone al final de todo en una línea nueva */
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999; /* Para poner la típica línea que separa el body del footer */
+}
