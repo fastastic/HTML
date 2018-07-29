@@ -1,0 +1,34 @@
+body {
+	text-align: center;
+}
+
+#principal {
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	/* Ya no hace falta utilizar esto porque ya no esta en fase experimental
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px; */
+	
+	/*border-radius: 20px;*/
+
+	border-radius: 20px / 10px;
+
+	/* Ya no hace falta utilizar esto porque ya no esta en fase experimental
+	-moz-border-radius: rgb(150,150,150) 5px 5px;
+	-webkit-border-radius: rgb(150,150,150) 5px 5px; */
+
+	box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+
+
+}
+
+#titulo {
+	font: bold 36px verdana, sans-serif;
+	text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
