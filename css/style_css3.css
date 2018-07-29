@@ -25,10 +25,67 @@ body {
 
 	box-shadow: rgb(150,150,150) 5px 5px 10px inset;
 
+	/*
+	background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+	background: -moz-linear-gradient(top, #FFFFFF, #006699);
+	*/
+
+	background: -webkit-linear-gradient(30deg, #FFFFFF, #006699);
+	background: -moz-linear-gradient(30deg, #FFFFFF, #006699);
+
+	/* Para crear un segundo borde */
+	outline: 2px dashed #000099;
+	outline-offset: 15px;
+
+	/* Para declarar una imagen alrededor de otra como borde
+	-moz-border-image: url("../res/mushroom.jpg") 29 stretch;
+	-webkit-border-image: url("../res/mushroom.jpg") 29 stretch;
+	border-image: url("../res/mushroom.jpg") 29 stretch;
+	*/
+
+	/* Escalado de un elemento */
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+
+	/* Rotado de un elemento */
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+
+	/* Cambiar el eje de simetría en grados y en ambas dimensiones de un elemento */
+	-moz-transform: skew(20deg);
+	-webkit-transform: skew(20deg);
+
+	/* Aplicar una traslación sobre un elemento */
+	-moz-transform: translate(100px);
+	-webkit-transform: translate(100px);
+
+	/* Aplicar más de una transformación a la vez */
+	-moz-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+	-webkit-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+
+	/* Transiciones */
+	-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
 
 }
 
+/* Para aplicar transformaciones dinámicas
+#principal:hover {
+	-moz-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+	-webkit-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+}
+*/
+
 #titulo {
-	font: bold 36px verdana, sans-serif;
-	text-shadow: rgb(0,0,150) 3px 3px 5px;
+	/*font: bold 36px verdana, sans-serif;*/
+	font: bold 36px Roboto, verdana, sans-serif;
+
+	/* Se puede usar rgb o rgba donde la a es el nivel de transparencia */
+	/*text-shadow: rgb(0,0,150) 3px 3px 5px;*/
+	text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+}	
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto/Roboto-Thin.ttf');
 }
